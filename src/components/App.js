@@ -19,14 +19,14 @@ const App = () => {
         <h2>Enter your budget to check available items:</h2>
         <input type="number" value={budget} placeholder="Enter your budget" id="budget" onChange={(e) => setBudget(e.target.value)} />
         <h3>Items you can buy are in green color</h3>
-        <tbody>
+        <table>
           {items.map((item, index) => (
             <tr key={index} style={{color: item.price <= budget ? "green" : "red"}}>
               <td>{item.name}</td>
               <td>{item.price}</td>
             </tr>
           ))}
-        </tbody>
+        </table>
     </div>
   )
 }
