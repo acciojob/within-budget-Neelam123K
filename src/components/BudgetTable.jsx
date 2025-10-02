@@ -23,8 +23,9 @@ const BudgetTable = () => {
         id="budget-input"
         onChange={(e) => setBudget(Number(e.target.value))}
       />  
-
-      <h4>Items you can buy are in Green color</h4>
+        <thead>
+            <h4>Items you can buy are in Green color</h4>
+    </thead>
 
       <table cellPadding="6" style={{ borderCollapse: "collapse" }}>
         <tbody>
