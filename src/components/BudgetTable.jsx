@@ -25,6 +25,9 @@ const BudgetTable = () => {
       />  
         <thead>
             <h4>Items you can buy are in Green color</h4>
+            <tr>
+                <th>Item Name</th>
+            </tr>
     </thead>
 
       <table cellPadding="6" style={{ borderCollapse: "collapse" }}>
